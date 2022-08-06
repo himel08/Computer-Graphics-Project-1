@@ -38,9 +38,9 @@ int main(int argc, char** argv)
     glutInit(&argc, argv);
     glutInitWindowSize(840, 640);
     glutInitWindowPosition(50, 50);
-    glutCreateWindow("parliament bhaban,");
+    glutCreateWindow("Parliament House,");
     glutDisplayFunc(display);
- glutTimerFunc(10, update, 0);
+    glutTimerFunc(10, update, 0);
     glutMainLoop();
     return 0;
 }
