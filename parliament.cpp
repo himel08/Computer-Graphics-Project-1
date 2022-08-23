@@ -3,6 +3,7 @@
 #include<math.h>
 #include <GL/gl.h>
 #include <GL/glut.h>
+# define PI 3.14159265358979323846
 
 void bird()
 {
