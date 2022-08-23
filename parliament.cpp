@@ -7,13 +7,13 @@
 
 GLfloat q=0.0f;
 GLfloat position = 0.0f;
-GLfloat speed = 0.01f;
+GLfloat speed = 0.02f;
 int r=0;
 
 void update(int value) {
 
-    if(position > 1.0)
-        position = -1.0f;
+    if(position > 2.0)
+        position = -2.0f;
 
     position += speed;
 
@@ -699,22 +699,26 @@ void display()
     glClear(GL_COLOR_BUFFER_BIT);
      glPushMatrix();
      fullsky();
-     flags();
-     grass();
 
-     stairs();
-     mainbuilding();
+      grass();
+
+      stairs();
+      mainbuilding();
+      flags();
 
 
-     bird();
+
 	 sun();
 	 plane();
 	 glTranslatef(position,0.0f, 0.0f);
-	 sky1();
-         sky2();
+
+    sky1();
+      sky2();
+      bird();
+
+
 	glPopMatrix();
     glFlush();
-
 }
 
 int main(int argc, char** argv)
