@@ -701,17 +701,17 @@ void display()
      fullsky();
      flags();
      grass();
-	plane();
+
      stairs();
      mainbuilding();
-     glTranslatef(position,0.0f, 0.0f);
+
 
      bird();
 	 sun();
-      sky1();
-      sky2();
-
-
+	 plane();
+	 glTranslatef(position,0.0f, 0.0f);
+	 sky1();
+         sky2();
 	glPopMatrix();
     glFlush();
 
