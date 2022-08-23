@@ -138,6 +138,8 @@ void display()
     
      bird();
      sky1();
+     stairs();
+     flags();
 
 }
 
