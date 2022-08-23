@@ -30,6 +30,7 @@ void display()
 {
     
      bird();
+     sky1();
 
 }
 
