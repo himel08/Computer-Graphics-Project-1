@@ -242,8 +242,8 @@ void plane(){
     glTranslatef(0.0f,1.5f, 0.0f);
 
 
-    glBegin(GL_POLYGON); // airplane outer body
-    glColor3ub(177, 176, 171); //grey
+    glBegin(GL_POLYGON); 
+    glColor3ub(177, 176, 171); 
     glVertex2f(-0.3f, 0.2f);
     glVertex2f(0.3f, 0.2f);
     glVertex2f(0.4f, 0.3f);
@@ -258,8 +258,8 @@ void plane(){
     glVertex2f(-0.35f, 0.23f);
     glVertex2f(-0.3f, 0.2f);
     glEnd();
-    glBegin(GL_POLYGON); // airplane front window
-    glColor3ub(117, 69, 160); // purple one
+    glBegin(GL_POLYGON); 
+    glColor3ub(117, 69, 160); 
     glVertex2f(-0.37f, 0.35f);
     glVertex2f(-0.32f, 0.35f);
     glVertex2f(-0.3f, 0.36f);
@@ -273,8 +273,8 @@ void plane(){
     glVertex2f(-0.33f, 0.35f);
     glVertex2f(-0.31f, 0.38f);
     glEnd();
-    glBegin(GL_LINES); // airplane front door
-    glColor3ub(144, 126, 181); // purple one
+    glBegin(GL_LINES); 
+    glColor3ub(144, 126, 181); 
     glVertex2f(-0.25f, 0.26f);
     glVertex2f(-0.23f, 0.24f);
     glVertex2f(-0.23f, 0.24f);
@@ -698,17 +698,20 @@ void display()
  glClearColor(1.0f, 1.0f, 1.0f, 1.0f); // Set background color to black and opaque
     glClear(GL_COLOR_BUFFER_BIT);
      glPushMatrix();
-glTranslatef(position,0.0f, 0.0f);
-     bird();
-	sun();
-	Plane;
-     stairs();
-      sky1();
-      sky2();
      fullsky();
      flags();
      grass();
-      mainbuilding();
+	plane();
+     stairs();
+     mainbuilding();
+     glTranslatef(position,0.0f, 0.0f);
+
+     bird();
+	 sun();
+      sky1();
+      sky2();
+
+
 	glPopMatrix();
     glFlush();
 
