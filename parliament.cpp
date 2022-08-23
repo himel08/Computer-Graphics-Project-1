@@ -5,28 +5,7 @@
 #include <GL/glut.h>
 # define PI 3.14159265358979323846
 
-void bird()
-{
-  glBegin(GL_LINES);
-  glColor3ub(255,255,255);
-  glVertex2f(0.2f,0.8f);
-  glVertex2f(0.18f,0.77f);
 
-  glColor3ub(255,255,255);
-  glVertex2f(0.18f,0.77f);
-  glVertex2f(0.15f,0.79f);
-
-  glColor3ub(255,255,255);
-  glVertex2f(0.13f,0.8f);
-  glVertex2f(0.11f,0.77f);
-
-  glColor3ub(255,255,255);
-  glVertex2f(0.11f,0.77f);
-  glVertex2f(0.08f,0.79f);
-
-  glEnd();
-
-}
 void sky1()
 {
     
