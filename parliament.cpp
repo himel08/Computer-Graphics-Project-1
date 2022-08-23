@@ -26,6 +26,50 @@ void bird()
   glEnd();
 
 }
+void stairs()
+{
+    glBegin(GL_POLYGON);
+	glColor3ub(150,40,27);
+	glVertex2f(-1.0f, -0.7f);
+	glVertex2f(1.0f, -.7f);
+	glVertex2f(1.0f, -.5f);
+	glVertex2f(-1.0f, -.5f);
+
+	glEnd();
+
+ glBegin(GL_LINES);
+ glLineWidth(8);
+	glColor3ub(0,0,0);
+	glVertex2f(-1.0f, -0.533f);
+	glVertex2f(1.0f, -.533f);
+
+	glColor3ub(0,0,0);
+	glVertex2f(-1.0f, -0.566f);
+	glVertex2f(1.0f, -.566f);
+
+	glColor3ub(0,0,0);
+	glVertex2f(-1.0f, -0.6f);
+	glVertex2f(1.0f, -.6f);
+
+	glColor3ub(0,0,0);
+	glVertex2f(-1.0f, -0.633f);
+	glVertex2f(1.0f, -.633f);
+
+	glColor3ub(0,0,0);
+	glVertex2f(-1.0f, -0.666f);
+	glVertex2f(1.0f, -.666f);
+
+	glColor3ub(0,0,0);
+	glVertex2f(-1.0f, -0.7f);
+	glVertex2f(1.0f, -.7f);
+
+	glColor3ub(0,0,0);
+	glVertex2f(-1.0f, -0.5f);
+	glVertex2f(1.0f, -.5f);
+
+	glEnd();
+
+
 void display()
 {
     
