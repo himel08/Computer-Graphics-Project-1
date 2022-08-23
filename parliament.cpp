@@ -68,6 +68,35 @@ void stairs()
 	glVertex2f(1.0f, -.5f);
 
 	glEnd();
+	
+	glBegin(GL_POLYGON);
+	glColor3ub(255,255,255);
+	glVertex2f(-.50f, -0.5f);
+	glVertex2f(-.53f, -.5f);
+	glVertex2f(-.63f, -.7f);
+	glVertex2f(-.60f, -.7f);
+
+	glEnd();
+
+	glBegin(GL_POLYGON);
+	glColor3ub(255,255,255);
+	glVertex2f(.50f, -0.5f);
+	glVertex2f(.53f, -.5f);
+	glVertex2f(.63f, -.7f);
+	glVertex2f(.60f, -.7f);
+
+	glEnd();
+
+	glBegin(GL_POLYGON);
+	glColor3ub(255,255,255);
+	glVertex2f(.01f, -0.5f);
+	glVertex2f(-.01f, -.5f);
+	glVertex2f(-.035f, -.7f);
+	glVertex2f(.035f, -.7f);
+
+	glEnd();
+
+}
 
 
 void display()
