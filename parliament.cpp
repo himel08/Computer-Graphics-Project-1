@@ -501,7 +501,10 @@ void flags()
 
 void display()
 {
-    
+ glClearColor(1.0f, 1.0f, 1.0f, 1.0f); // Set background color to black and opaque
+    glClear(GL_COLOR_BUFFER_BIT);
+     glPushMatrix();
+glTranslatef(position,0.0f, 0.0f);
      bird();
      stairs();
       sky1();
@@ -510,6 +513,8 @@ void display()
      flags();
      grass();
       mainbuilding();
+	glPopMatrix();
+    glFlush();
 
 }
 
