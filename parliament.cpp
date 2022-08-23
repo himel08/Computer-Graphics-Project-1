@@ -211,8 +211,8 @@ void sun()
     glLoadIdentity();
     glBegin(GL_POLYGON);
     glColor3ub(253, 184, 19);
-    GLfloat x5=.9f;
-    GLfloat y5=.9f;
+    GLfloat x5=.5f;
+    GLfloat y5=.85f;
     GLfloat radius5 =.09f;
     GLfloat twicePi5 = 3.0f * PI;
     GLfloat triangleAmount2=100;
