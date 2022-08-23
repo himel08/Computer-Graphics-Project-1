@@ -300,6 +300,8 @@ void display()
     
      bird();
      stairs();
+      sky1();
+      sky2();
      flags();
 
 }
