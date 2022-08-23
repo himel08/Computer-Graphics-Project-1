@@ -302,6 +302,7 @@ void display()
      stairs();
       sky1();
       sky2();
+     fullsky();
      flags();
 
 }
