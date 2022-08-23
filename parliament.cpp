@@ -189,6 +189,18 @@ void fullsky()
 	glEnd();
 }
 
+void grass()
+{
+    glBegin(GL_POLYGON);
+	glColor3ub(12,252,0);
+	glVertex2f(-1.0f, -0.7f);
+	glVertex2f(1.0f, -.7f);
+	glVertex2f(1.0f, -1.0f);
+	glVertex2f(-1.0f, -1.0f);
+
+	glEnd();
+}
+
 void stairs()
 {
     glBegin(GL_POLYGON);
@@ -304,6 +316,7 @@ void display()
       sky2();
      fullsky();
      flags();
+	grass();
 
 }
 
